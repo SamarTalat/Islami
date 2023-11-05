@@ -5,6 +5,8 @@ class MyTheme {
   static Color blackColor =  Color(0xff242424);
   static Color primaryLight = Color(0xffB7935F);
   static Color whitecolor = Colors.white;
+  static Color lightwhitecolor = Color(0xffF8F8F8);
+
 
   //object ThemeData
   static ThemeData lightTheme = ThemeData(
@@ -14,12 +16,27 @@ class MyTheme {
           backgroundColor: Colors.transparent,
           elevation: 0,
           centerTitle: true,
+        iconTheme: IconThemeData(
+          color: Color(0xff242424)
+        ),
           ),
     textTheme: TextTheme(
       titleLarge: TextStyle(
         color: blackColor,
-        fontWeight: FontWeight.w800,
+        fontWeight: FontWeight.w700,
         fontSize: 30 ,
+        fontStyle: FontStyle.normal,
+      ),
+      titleMedium: TextStyle(
+        color: blackColor,
+        fontWeight: FontWeight.w600,
+        fontSize: 25 ,
+        fontStyle: FontStyle.normal,
+      ),
+      titleSmall: TextStyle(
+        color: blackColor,
+        fontWeight: FontWeight.w400,
+        fontSize: 25 ,
         fontStyle: FontStyle.normal,
       ),
         ),
