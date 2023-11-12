@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:islami/Home/quran/sura_details_screen.dart';
 import 'package:islami/my_theme.dart';
 
-class ItemSuraDetails extends StatelessWidget {
+class ItemHadethDetails extends StatelessWidget {
 String content ;
-int index;
-ItemSuraDetails({required this.content , required this.index});
+
+ItemHadethDetails({required this.content});
 
   @override
   Widget build(BuildContext context) {
-    return Text('$content {${index+1}}',
+    return Text(content,
       style: Theme.of(context).textTheme.displaySmall,
         textAlign: TextAlign.center,
-      textDirection: TextDirection.rtl,
+        textDirection: TextDirection.rtl,
       );
   }
 }
